@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de E-mail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Envio de E-mail</h1>
+        <form id="emailForm" class="p-4 border rounded shadow-sm">
+            <div class="mb-3">
+                <label for="email" class="form-label">Seu E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Assunto:</label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="Digite o assunto"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="body" class="form-label">Corpo do E-mail:</label>
+                <textarea id="body" name="body" class="form-control" rows="5" placeholder="Digite a mensagem"
+                    required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
